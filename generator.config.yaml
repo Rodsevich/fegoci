@@ -1,0 +1,9 @@
+project:
+  components: "src/angular/componentes"
+  css_extension: "sass"
+  directives: "src/angular/directivas"
+  html_extension: "pug"
+  pipes: "src/angular/pipes"
+  root: "app.dart"
+  routes: "src/angular/rutas"
+  services: "src/angular/servicios"
