@@ -3,8 +3,8 @@
 # See https://www.dartlang.org/tools/private-files.html
 
 #Vamo' a usar pug y sass asi q...
-*.css
-*.html
+lib/**/*.css
+lib/**/*.html
 
 # source_gen
 .dart_tool
