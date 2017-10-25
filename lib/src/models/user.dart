@@ -1,6 +1,9 @@
 library fegoci.models.user;
 
 import 'package:angel_framework/common.dart';
+import 'package:angel_serialize/angel_serialize.dart';
+
+part 'user.g.dart';
 
 // Model classes in Angel, as a convention, should extend the `Model`
 // class.
@@ -22,19 +25,11 @@ import 'package:angel_framework/common.dart';
 // The `Model` class has no server-side dependency, and thus you can use it as-is, cross-platform.
 // This is good for full-stack applications, as you do not have to maintain duplicate class files. ;)
 
-class User extends Model {
+@serializable
+abstract class _User extends Model {
   @override
   String id;
   String email, username, password, salt;
   @override
   DateTime createdAt, updatedAt;
-
-  User(
-      {this.id,
-      this.email,
-      this.username,
-      this.password,
-      this.salt,
-      this.createdAt,
-      this.updatedAt});
 }

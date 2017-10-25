@@ -8,10 +8,15 @@ dependencies:
   angel_hot: "^1.0.0-rc.1"
   angel_multiserver: "^1.0.0"
   angular: "^4.0.0"
+  angel_serialize: ^1.0.0-alpha
 dev_dependencies:
   grinder: "^0.8.0"
   http: "^0.11.3"
   test: "^0.12.13"
+  generator_plus:
+    path: /home/nico/src/generator_plus
+  angel_serialize_generator: ^1.0.0-alpha
+  build_runner: ^0.5.0
 environment:
   sdk: ">=1.19.0"
 transformers:
