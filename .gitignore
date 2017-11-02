@@ -8,6 +8,7 @@ lib/**/*.html
 
 # source_gen
 .dart_tool
+*.g.dart
 
 # Files and directories created by pub
 .buildlog
