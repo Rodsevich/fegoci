@@ -1,0 +1,19 @@
+library fegoci.models.user;
+
+import 'package:angel_framework/common.dart';
+import 'package:angel_serialize/angel_serialize.dart';
+
+part '{{#snake_case}}{{name}}{{#snake_case}}.g.dart';
+
+@serializable
+abstract class _{{#pascal_case}}{{name}}{{#pascal_case}} extends Model {
+
+  @override
+  String id;
+
+  @override
+  DateTime createdAt, updatedAt;
+
+  //Meté los campos del modelo a partir de acá:
+
+}

@@ -5,6 +5,7 @@ import 'package:generator_plus/generator_plus.dart';
 import 'package:fegoci/generator+/generators.dart';
 import 'package:fegoci/generator+/annotations.dart';
 
+import "./generator+/generators/model.dart";
 //@generationBefore("new-generator-import")
 
 class FegociGeneratorPlus extends GeneratorPlus {
@@ -13,6 +14,7 @@ class FegociGeneratorPlus extends GeneratorPlus {
     List<Generator> generators = [
       new AnnotationsGenerator(),
       new GeneratorsGenerator(),
+      new ModelGenerator()
     ];
     addGenerators(generators);
   }
